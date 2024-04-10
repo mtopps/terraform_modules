@@ -45,6 +45,7 @@ resource "proxmox_vm_qemu" "vm" {
     ignore_changes = [
       disk,
       network,
+      tags,
     ]
   }
 }
